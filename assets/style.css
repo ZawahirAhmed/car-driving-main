@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: jost;
+  text-transform: capitalize;
+}
+.mainContainer {
+  height: 100vh;
+  background-image: url(./images/bg2.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+  position: relative;
+  overflow: hidden;
+}
+.car,
+.traficSignal1,
+.traficSignal2,
+.lights,
+.btns {
+  position: absolute;
+}
+.car {
+  left: 2%;
+  bottom:10%;
+}
+
+.traficSignal1,
+.traficSignal2,
+.lights {
+  background-color: black;
+}
+.traficSignal1 {
+  left: 94%;
+}
+.traficSignal2 {
+  right: 5%;
+}
+.traficSignal1,
+.traficSignal2 {
+  width: 15px;
+  height: 60px;
+}
+
+.lights {
+  padding-block: 5px;
+  width: 70px;
+  height: 100px;
+  bottom: -100%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.redLight,
+.greenLight,
+.yellowLight {
+  width: 40%;
+  height: 30%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: rgb(255, 255, 255, 0.3);
+}
+.yellowLight {
+  background-color: yellow;
+}
+.btns {
+  left: 5%;
+  top: 5%;
+
+}
+
+.startBtn {
+  background-color: green;
+}
+.stopBtn {
+  background-color: red;
+}
+
+.btn {
+  color: white;
+  border:  none;
+  font-size: 2rem;
+  padding: 10px 20px;
+}
